@@ -31,6 +31,7 @@ namespace RepoTest
         public void Dispose()
         {
             dbConnection.Dispose();
+            _loanContext.Dispose();
         }
 
         [Test]
