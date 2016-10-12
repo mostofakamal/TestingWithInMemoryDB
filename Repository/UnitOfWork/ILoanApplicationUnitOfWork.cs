@@ -8,7 +8,7 @@ using Repository.Repositories;
 
 namespace Repository.UnitOfWork
 {
-   public  interface ILoanApplicationUnitOfWork: IDisposable,IUnitOfWork
+   public  interface ILoanApplicationUnitOfWork: IUnitOfWork
     {
        IRepository<T> Repository<T>() where T : class, ILoan;
       

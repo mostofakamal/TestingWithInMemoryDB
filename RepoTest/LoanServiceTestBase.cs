@@ -19,6 +19,7 @@ namespace RepoTest
         protected ILoanApplicationContext LoanContext;
         protected DbConnection DbConnection;
         protected ILoanService LoanService;
+        protected ILoanApplicationUnitOfWork LoanUnitOfWork;
         [TestFixtureSetUp]
         public void Init()
         {
@@ -32,6 +33,7 @@ namespace RepoTest
 
             LoanContext = kernel.Get<ILoanApplicationContext>();
             LoanService = kernel.Get<ILoanService>();
+            LoanUnitOfWork = kernel.Get<ILoanApplicationUnitOfWork>();
         }
 
         [TestFixtureTearDown]

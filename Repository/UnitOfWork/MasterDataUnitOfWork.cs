@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using Data.MasterValue;
 using Data.MasterValue.Models;
@@ -8,51 +9,23 @@ using Repository.Repositories;
 
 namespace Repository.UnitOfWork
 {
-    public class MasterDataUnitOfWork : IMasterDataUnitOfWork
+    public class MasterDataUnitOfWork : BaseUnitOfWork, IMasterDataUnitOfWork
     {
-        private readonly MasterValuesContext _context = null;
-
-        public MasterDataUnitOfWork()
+        public MasterDataUnitOfWork(IMasterValuesContext context) : base((DbContext)context)
         {
-            _context = new MasterValuesContext();
         }
 
-        private Dictionary<Type, object> Repositories = new Dictionary<Type, object>();
+        private readonly Dictionary<Type, object> _repositories = new Dictionary<Type, object>();
 
         public IRepository<T> Repository<T>() where T : class, IMasterData
         {
-            if (Repositories.Keys.Contains(typeof(T)))
+            if (_repositories.Keys.Contains(typeof(T)))
             {
-                return Repositories[typeof(T)] as IRepository<T>;
+                return _repositories[typeof(T)] as IRepository<T>;
             }
             IRepository<T> repo = new RepositoryBase<T>(_context);
-            Repositories.Add(typeof(T), repo);
+            _repositories.Add(typeof(T), repo);
             return repo;
-        }
-
-        public void SaveChanges()
-        {
-            _context.SaveChanges();
-        }
-
-        private bool _disposed;
-
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!this._disposed)
-            {
-                if (disposing)
-                {
-                    _context.Dispose();
-                }
-            }
-            this._disposed = true;
-        }
-
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
         }
     }
 }

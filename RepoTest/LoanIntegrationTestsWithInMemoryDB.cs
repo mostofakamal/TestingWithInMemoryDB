@@ -15,9 +15,8 @@ namespace RepoTest
                 Amount = 33434,
                 Name = "Mostofa"
             };
-            LoanContext.tblLoanApplications.Add(firstLoan);
-            LoanContext.SaveChanges();
-
+            LoanUnitOfWork.Repository<tblLoanApplication>().Add(firstLoan);
+            LoanUnitOfWork.SaveChanges();
             var loan = new tblLoanApplication
             {
                 Name = "Sumon",

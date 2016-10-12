@@ -53,6 +53,7 @@
     <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\MasterDataRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
+    <Compile Include="UnitOfWork\BaseUnitOfWork.cs" />
     <Compile Include="UnitOfWork\ILoanApplicationUnitOfWork.cs" />
     <Compile Include="UnitOfWork\IMasterDataUnitOfWork.cs" />
     <Compile Include="UnitOfWork\IUnitOfWork.cs" />
