@@ -62,3 +62,5 @@ F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\RepoTest\bi
 F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\RepoTest\obj\Debug\RepoTest.csprojResolveAssemblyReference.cache
 F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\RepoTest\obj\Debug\RepoTest.dll
 F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\RepoTest\obj\Debug\RepoTest.pdb
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\RepoTest\bin\Debug\Ninject.dll
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\RepoTest\bin\Debug\Ninject.xml

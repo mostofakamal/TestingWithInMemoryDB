@@ -9,3 +9,14 @@ c:\users\sumon\documents\visual studio 2015\Projects\Repository\Service\bin\Debu
 c:\users\sumon\documents\visual studio 2015\Projects\Repository\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
 c:\users\sumon\documents\visual studio 2015\Projects\Repository\Service\obj\Debug\Service.dll
 c:\users\sumon\documents\visual studio 2015\Projects\Repository\Service\obj\Debug\Service.pdb
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Service\bin\Debug\Service.dll
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Service\bin\Debug\Service.pdb
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Service\bin\Debug\Data.dll
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Service\bin\Debug\Repository.dll
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Service\bin\Debug\EntityFramework.dll
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Service\bin\Debug\Data.pdb
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Service\bin\Debug\Repository.pdb
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Service\bin\Debug\EntityFramework.xml
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Service\obj\Debug\Service.dll
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Service\obj\Debug\Service.pdb

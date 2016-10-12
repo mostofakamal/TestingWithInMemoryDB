@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using Data.LoanApplication;
 using Data.LoanApplication.Models;
@@ -10,9 +11,9 @@ namespace Repository.UnitOfWork
 {
     public class LoanApplicationUnitOfWork : ILoanApplicationUnitOfWork
     {
-        private readonly LoanApplicationContext _context = null;
+        private readonly ILoanApplicationContext _context = null;
 
-        public LoanApplicationUnitOfWork(LoanApplicationContext context)
+        public LoanApplicationUnitOfWork(ILoanApplicationContext context)
         {
             _context = context ?? new LoanApplicationContext();
         }
@@ -25,7 +26,7 @@ namespace Repository.UnitOfWork
             {
                 return _repositories[typeof (T)] as IRepository<T>;
             }
-            IRepository<T> repo = new RepositoryBase<T>(_context);
+            IRepository<T> repo = new RepositoryBase<T>((DbContext)_context);
             _repositories.Add(typeof(T), repo);
             return repo;
         }

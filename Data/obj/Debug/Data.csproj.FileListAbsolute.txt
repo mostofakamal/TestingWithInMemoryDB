@@ -11,3 +11,16 @@ C:\Users\Sumon\Documents\Visual Studio 2015\Projects\Repository\Data\bin\Debug\E
 C:\Users\Sumon\Documents\Visual Studio 2015\Projects\Repository\Data\bin\Debug\NMemory.dll
 C:\Users\Sumon\Documents\Visual Studio 2015\Projects\Repository\Data\bin\Debug\Effort.xml
 C:\Users\Sumon\Documents\Visual Studio 2015\Projects\Repository\Data\bin\Debug\NMemory.xml
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Data\obj\Debug\Data.dll
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Data\obj\Debug\Data.pdb
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Data\bin\Debug\Data.dll
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Data\bin\Debug\Data.pdb
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Data\bin\Debug\Effort.dll
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Data\bin\Debug\EntityFramework.dll
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Data\bin\Debug\EntityFramework.SqlServer.dll
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Data\bin\Debug\NMemory.dll
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Data\bin\Debug\Effort.xml
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Data\bin\Debug\EntityFramework.xml
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Data\bin\Debug\EntityFramework.SqlServer.xml
+F:\Learning and Practice\TestingWithInMemoryDB\TestingWithInMemoryDB\Data\bin\Debug\NMemory.xml

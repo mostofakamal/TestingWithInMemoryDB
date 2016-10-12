@@ -1,51 +1,45 @@
-﻿using System;
-using System.Data.Common;
-using System.Data.Entity.Infrastructure;
-using Data.LoanApplication;
-using Data.Models;
-using Effort;
+﻿using Data.Models;
 using FluentAssertions;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
-using Repository.UnitOfWork;
-using Service;
 
 namespace RepoTest
 {
     [TestFixture]
-    public class LoanIntegrationTests
+    public class LoanIntegrationTests : LoanServiceTestBase
     {
-        private LoanApplicationContext _loanContext;
-        private DbConnection dbConnection;
-        private LoanService _loanService;
-
-        [SetUp]
-        public void Init()
-        {
-            dbConnection = DbConnectionFactory.CreateTransient();
-            _loanContext = new LoanApplicationContext(dbConnection);
-            _loanService = new LoanService(new LoanApplicationUnitOfWork(_loanContext));
-        }
-
-        [TearDown]
-        public void Dispose()
-        {
-            dbConnection.Dispose();
-            _loanContext.Dispose();
-        }
-
         [Test]
         public void Create_AddALoanApplication_LoanApplicationCreated()
         {
+            var firstLoan = new tblLoanApplication
+            {
+                Amount = 33434,
+                Name = "Mostofa"
+            };
+            LoanContext.tblLoanApplications.Add(firstLoan);
+            LoanContext.SaveChanges();
+
             var loan = new tblLoanApplication
             {
                 Name = "Sumon",
                 Amount = 4509,
             };
-
-            _loanService.CreteLoan(loan);
-            var result = _loanService.GetLoan(1);
+            LoanService.CreteLoan(loan);
+            var result = LoanService.GetLoan(loan.Id);
             (result.Amount).Should().Be(4509);
+        }
+
+        [Test]
+        public void Create_AddAnotherLoanApplication_LoanApplicationCreated()
+        {
+            var loan = new tblLoanApplication
+            {
+                Name = "Kamal",
+                Amount = 300,
+            };
+
+            LoanService.CreteLoan(loan);
+            var result = LoanService.GetLoan(loan.Id);
+            (result.Name).Should().Be("Kamal");
         }
     }
 }

@@ -1,5 +1,6 @@
 using System.Data.Common;
 using System.Data.Entity;
+using Data.LoanApplication.Models;
 using Data.Models;
 using Data.Models.Mapping;
 
@@ -17,7 +18,7 @@ namespace Data.LoanApplication
         {
         }
 
-        public LoanApplicationContext(DbConnection connection): base(connection,true)
+        public LoanApplicationContext(DbConnection connection) : base(connection, true)
         {
             this.Database.CreateIfNotExists();
         }
