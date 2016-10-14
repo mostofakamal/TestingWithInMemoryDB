@@ -38,7 +38,7 @@ namespace RepoTest
 
             LoanService.CreteLoan(loan);
             var result = LoanService.GetLoan(loan.Id);
-            (result.Name).Should().Be("Kamal");
+            (result.Name).Should().Be("Kamald");
         }
     }
 }
