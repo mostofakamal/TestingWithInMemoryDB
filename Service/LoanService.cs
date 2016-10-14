@@ -26,6 +26,7 @@ namespace Service
 
         public LoanWithBalance GetLoanApplicationWithBalance(string name)
         {
+            jhjh
             var loanApplication = _uow.Repository<tblLoanApplication>().Get(c => c.Name == name);
             var balance = _uow.Repository<tblBalance>().Get(b => b.Name == name);
             var loanwithBalance= new LoanWithBalance();
